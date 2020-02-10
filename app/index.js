@@ -12,7 +12,7 @@ const port = 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post('/api/register', (req, res) => registerStudent(req, res));
+app.post('/api/register', async (req, res) => await registerStudent(req, res));
 app.get('/api/commonstudents', (req, res) => commonStudents(req, res));
 app.post('/api/suspend', (req, res) => suspendStudent(req, res));
 app.post('/api/retrievefornotifications', (req, res) => retrieveforNotifications(req, res));
