@@ -9,10 +9,13 @@ services:
             - db
         restart: always
         ports:
-            - 8080:8080
+            - "8080:8080"
     db:
+        image: mysql:5.7
         build: ./mysql
-        restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: password
-            MYSQL_DATABASE: school
+            - MYSQL_ROOT_PASSWORD=test
+            - MYSQL_DATABASE=school
+        restart: always
+        ports:
+            - "3306:3306"
