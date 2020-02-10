@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
     node-app:
-        build: .
+        build: ./app
         environment:
             - DATABASE_HOST=db
         depends_on:
