@@ -4,6 +4,7 @@
   "description": "This is a set of API endpoint for teachers to perform admin functions for their students",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
