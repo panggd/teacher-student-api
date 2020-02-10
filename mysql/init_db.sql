@@ -15,8 +15,7 @@ CREATE TABLE students (
 );
 
 CREATE TABLE teacher_student (
-    id INTEGER AUTO_INCREMENT,
     teacher_email VARCHAR(50),
     student_email VARCHAR(50),
-    PRIMARY KEY (id)
+    PRIMARY KEY (teacher_email, student_email)
 );
