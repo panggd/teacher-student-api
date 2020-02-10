@@ -7,3 +7,6 @@ To start, simply execute **./run.sh**
 
 ## Unit testing
 After the docker container is up and running, execute **npm run test**.
+
+## Misc Info
+Once docker container is ready, app is running at **http://localhost:8080**.
